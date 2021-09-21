@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IconService } from '@visurel/iconify-angular';
 
 @Component({
   selector: 'app-root',
