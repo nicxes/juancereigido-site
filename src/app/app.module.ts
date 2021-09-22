@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 // Router Module
 import { AppRoutingModule } from './app-routing.module';
 
+import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
+
 // Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -21,7 +23,8 @@ import { NavbarMobileComponent } from './components/navbar-mobile/navbar-mobile.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxHideOnScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
