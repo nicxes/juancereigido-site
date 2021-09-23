@@ -1,0 +1,7 @@
+.Loading {
+  transform: translate(100%);
+}
+
+.Loading.active {
+  transform: translate(0%);
+}
