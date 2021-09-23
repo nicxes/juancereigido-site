@@ -2,3 +2,16 @@
   box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.36);
   transition: top 0.3s ease-in-out;
 }
+
+.Navbar ul li a:hover {
+  font-weight:bold;
+}
+
+.Navbar ul li a::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}

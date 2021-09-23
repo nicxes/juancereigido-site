@@ -16,8 +16,10 @@ module.exports = {
         cyan: '#405F6F',
         gray: '#405F6F',
         white: '#FAFAFA',
+        light: '#E6EAEC',
         black: '#181818',
-        green: '#8AC926'
+        green: '#8AC926',
+        ligthen: 'rgba(24, 24, 24, 0.1)'
       },
       fontFamily: {
         sans: ['Josefin Sans', 'sans-serif'],
