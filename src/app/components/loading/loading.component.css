@@ -1,7 +1,9 @@
 .Loading {
+  -webkit-transform: translate(100%);
   transform: translate(100%);
 }
 
 .Loading.active {
+  -webkit-transform: translate(0%);
   transform: translate(0%);
 }
