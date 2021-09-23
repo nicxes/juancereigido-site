@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 
 // Router Module
 import { AppRoutingModule } from './app-routing.module';
-
-import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 
 // Components
 import { AppComponent } from './app.component';
