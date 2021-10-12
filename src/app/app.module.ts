@@ -4,7 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 // Router Module
 import { AppRoutingModule } from './app-routing.module';
 
+// Cloudinary
+import { CloudinaryModule } from '@cloudinary/angular-5.x';
+import * as  Cloudinary from 'cloudinary-core';
+
+// NGX Hide on scroll
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
+
+// Lottie Module
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 
@@ -35,7 +42,8 @@ export function playerFactory() {
     BrowserModule,
     AppRoutingModule,
     NgxHideOnScrollModule,
-    LottieModule.forRoot({ player: playerFactory })
+    LottieModule.forRoot({ player: playerFactory }),
+    CloudinaryModule.forRoot(Cloudinary, { cloud_name: 'mycloudname'})
   ],
   providers: [],
   bootstrap: [AppComponent]
