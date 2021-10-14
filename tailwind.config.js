@@ -24,6 +24,7 @@ module.exports = {
       fontFamily: {
         sans: ['Josefin Sans', 'sans-serif'],
         serif: ['Josefin Sans', 'serif'],
+        base: ['Poppins', 'sans-serif'],
       },
     },
     variants: {
