@@ -22,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { NavbarMobileComponent } from './components/navbar-mobile/navbar-mobile.component';
 import { LoadingComponent } from './components/loading/loading.component';
+import { DownloadComponent } from './components/download/download.component';
 
 // Note we need a separate function as it's required
 // by the AOT compiler.
@@ -36,7 +37,8 @@ export function playerFactory() {
     FooterComponent,
     LogoComponent,
     NavbarMobileComponent,
-    LoadingComponent
+    LoadingComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,

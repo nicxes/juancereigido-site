@@ -5,12 +5,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { KeyboardComponent } from './pages/keyboard/keyboard.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
+// Components
+import { DownloadComponent } from './components/download/download.component';
+
 const routes: Routes = [
   { path: 'keyboard', component: KeyboardComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
+  declarations: [
+    DownloadComponent
+  ],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
