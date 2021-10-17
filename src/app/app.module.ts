@@ -34,6 +34,7 @@ export function playerFactory() {
 
 // Routes
 const routes: Routes = [
+  { path: '', redirectTo: '/keyboard', pathMatch: 'full' },
   { path: 'keyboard', component: KeyboardComponent },
   { path: '**', component: NotFoundComponent },
 ];
