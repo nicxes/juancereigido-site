@@ -15,7 +15,7 @@ export class LoadingComponent implements OnInit {
   fakeLoading() {
     setTimeout(() => {
       this.loading = !this.loading
-    }, 2000);
+    }, 1500);
   }
 
   ngOnInit(): void {

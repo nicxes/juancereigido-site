@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './keyboard.component.html',
   styleUrls: ['./keyboard.component.css']
 })
+
 export class KeyboardComponent implements OnInit {
 
   constructor() { }
