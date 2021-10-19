@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class KeyboardComponent implements OnInit {
-
-  constructor() { }
+  modalDownload = false
 
   ngOnInit(): void {
   }
 
+  toggleDownload() {
+    this.modalDownload = !this.modalDownload
+  }
 }

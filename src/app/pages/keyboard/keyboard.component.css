@@ -7,3 +7,25 @@
     width: 19px;
   }
 }
+
+.Modal {
+  visibility: hidden;
+  @apply bg-opacity-0;
+}
+
+@layer components {
+  .Modal.active {
+    visibility: visible;
+    @apply bg-opacity-50;
+  }
+}
+
+.Modal > div {
+  -webkit-transform: translate(0%, 420px);
+  transform: translate(0%, 420px);
+}
+
+.Modal > div.active {
+  -webkit-transform: translate(0%);
+  transform: translate(0%);
+}
