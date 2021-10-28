@@ -26,15 +26,15 @@
 
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-2 md:gap-x-6 order-1 md:order-3 w-full mb-6">
             <li>
-              <button (click)="toggleDownload()" class="flex justify-center items-center bg-primary hover:bg-orange text-orange hover:text-primary text-sm md:text-lg w-full py-4 md:py-5 rounded-xl border-2 border-primary hover:border-orange transition duration-300 ease-in-out">
+              <button (click)="toggleDownload()" class="flex justify-center items-center bg-primary hover:bg-orange text-orange hover:text-primary text-sm font-bold md:text-lg w-full py-4 md:py-5 rounded-xl border-2 border-primary hover:border-orange transition duration-300 ease-in-out">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="24" height="24" class="mr-2" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="currentColor"><path d="M12.5 6c-2.294 0-3.71 1.655-4.106 2.447A1 1 0 0 1 7.5 9c-.757 0-1.914.235-2.853.912C3.758 10.552 3 11.626 3 13.5c0 1.458.459 2.415 1.05 3.06c.607.663 1.418 1.062 2.204 1.269a1 1 0 0 1-.508 1.934c-1.049-.276-2.238-.833-3.171-1.852C1.624 16.873 1 15.423 1 13.5c0-2.526 1.075-4.201 2.478-5.212c1.124-.809 2.413-1.163 3.435-1.26C7.751 5.773 9.626 4 12.5 4c2.13 0 3.65 1.08 4.607 2.33a7.133 7.133 0 0 1 1.285 2.745c.785.127 1.695.43 2.505 1.014C22.092 10.948 23 12.373 23 14.5c0 1.516-.462 2.697-1.196 3.571c-.72.86-1.65 1.362-2.498 1.634a1 1 0 1 1-.612-1.904c.586-.188 1.157-.513 1.578-1.015c.408-.486.728-1.202.728-2.286c0-1.474-.592-2.299-1.272-2.789c-.73-.526-1.638-.711-2.228-.711a1 1 0 0 1-1-1c0-.502-.284-1.543-.982-2.455C14.85 6.67 13.87 6 12.5 6zm-.5 4a1 1 0 0 1 1 1v5.586l1.293-1.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L11 16.586V11a1 1 0 0 1 1-1z"/></g></svg>
                 Descargar gratis
               </button>
             </li>
     
             <li>
-              <a href="https://articulo.mercadolibre.com.ar/MLA-1108820232-soporte-para-teclado-en-monitor-_JM" target="_blank" class="bg-transparent hover:bg-light text-primary text-sm md:text-lg font-bold w-full py-4 md:py-5 rounded-xl border-2 border-primary transition duration-300 ease-in-out flex items-center justify-center">
-                Comprar ($ 999)
+              <a href="https://articulo.mercadolibre.com.ar/MLA-1108949178-soporte-para-teclado-pc-en-monitor-_JM" target="_blank" class="bg-transparent hover:bg-light text-primary text-sm md:text-lg font-bold w-full py-4 md:py-5 rounded-xl border-2 border-primary transition duration-300 ease-in-out flex items-center justify-center">
+                Comprar (<span class="mr-1 md:mr-0">$</span>1199)
                 <img src="assets/meli.png" class="meli ml-2">
               </a>
             </li>
@@ -82,20 +82,24 @@
 
         <img src="/assets/images/2.png" alt="" class="mb-2 w-full rounded-2xl">
         <p class="text-primary text-sm opacity-50 mb-4 md:mb-6">Primeros bocetos en papel. A la izquierda la primera versión impresa, a la derecha la última.</p>
-        <p class="text-primary mb-9 leading-8">Mi espacio de trabajo es sagrado, pero también muy chico, así que decidí crear una solución a un problema, simple, pero que agradecería mucho no tenerlo todos los días. ¿Para que quiero tener el teclado encima de mi escritorio si no lo estoy usando?</p>
-        <p class="text-primary mb-9 leading-8">Comencé haciendo algunos bocetos en papel, que después pasaron a ser un modelo 3D, para unas horas más tarde tener la primer versión en mis manos. <b>Sorpresa: era una cagada. no sólo era gigante, si no que tardaba más de 8 horas en imprimirse, así que decidí iterar.</b></p>
+        <p class="text-primary mb-9 leading-8">Mi espacio de trabajo es sagrado, pero también muy chico, así que creé la solución a un problema simple, pero que agradecería mucho no tenerlo todos los días. ¿Para que quiero tener el teclado encima de mi escritorio si no lo estoy usando?</p>
+        <p class="text-primary mb-9 leading-8">Comencé haciendo algunos bocetos en papel, que después pasaron a ser un modelo 3D, para unas horas más tarde tener la primer versión en mis manos. <b>Sorpresa: no sólo era gigante, si no que tardaba más de 8 horas en imprimirse, así que decidí iterar.</b></p>
         
         <img src="/assets/images/3.png" alt="" class="mb-2 w-full rounded-2xl">
-        <p class="text-primary text-sm opacity-50 mb-4 md:mb-6">La segunda versión impresa. Se probó colocar velcro como sistema de agarre, pero no funcionó bien.</p>
-        <p class="text-primary mb-9 leading-8">En la segunda versión cambió completamente el diseño. Buscando principalmente <b>optimizar tiempos de impresión</b>, se redujo el tamaño considerablemente, y se eliminaron los agujeros, siendo reemplazados por velcro, gran idea. <b>Sorpresa: Al otro día encontré el teclado en el piso.</b></p>
+        <p class="text-primary text-sm opacity-50 mb-4 md:mb-6">La segunda versión impresa. Probé colocar velcro como sistema de agarre, pero no funcionó muy bien.</p>
+        <p class="text-primary mb-9 leading-8">En la segunda versión cambió completamente el diseño. Buscando principalmente <b>optimizar tiempos de impresión</b>, reduje el tamaño considerablemente, y eliminé los agujeros, siendo reemplazados por velcro: en teoría una gran idea, pero en la práctica no tanto. <b>Al otro día encontré el teclado en el piso.</b></p>
         
         <img src="/assets/images/4.png" alt="" class="mb-2 w-full rounded-2xl">
-        <p class="text-primary text-sm opacity-50 mb-4 md:mb-6">La tercer versión contaba con dos agujeros que permitían ajustar la altura del soporte.</p>
-        <p class="text-primary mb-9 leading-8">Tercera vuelta. <b>Después de recibir feedback y realizar varias pruebas, volvieron los agujeros</b>. Funcionó perfecto, e incluso se podía ajustar la altura para que no se vea el teclado cuando estás de frente al monitor. Si bien la impresión era un 50% más rápida que la primera versión, me seguía pareciendo que <b>tenía demasiado material. Una iteración más</b>.</p>
+        <p class="text-primary text-sm opacity-50 mb-4 md:mb-6">La tercer versión tenía dos agujeros que permitían ajustar la altura del soporte.</p>
+        <p class="text-primary mb-9 leading-8">Tercera vuelta. <b>Después de recibir feedback y realizar varias pruebas, volvieron los agujeros.</b> Funcionó perfecto, e incluso se podía ajustar la altura. Si bien la impresión era un 50% más rápida que la primera versión, me seguía pareciendo que <b>tenía demasiado material. Una iteración más.</b></p>
+        
+        <img src="/assets/images/6.png" alt="" class="mb-2 w-full rounded-2xl">
+        <p class="text-primary text-sm opacity-50 mb-4 md:mb-6">Todas las versiones del Keyboard Holder.</p>
+        <p class="text-primary mb-9 leading-8">Ahora sí. El margen de ajuste de la altura <b>era demasiado chico como para ser útil</b>, y la sección del medio tenía mucho material sin tener una función específica, así que decidí trabajar en una última versión que mantenga la fuerza y el diseño, pero que sólo tenga el material nececesario.</p>
         
         <img src="/assets/images/5.png" alt="" class="mb-2 w-full rounded-2xl">
         <p class="text-primary text-sm opacity-50 mb-4 md:mb-6">La versión final del Keyboard Holder en acción.</p>
-        <p class="text-primary mb-9 leading-8">Ahora sí. El margen de ajuste de la altura <b>era demasiado pequeño como para ser útil</b>, y la sección del medio tenía mucho material sin tener una función específica, así que decidí trabajar en una última versión que mantenga la fuerza y el diseño, pero que sólo tenga el material nececesario. Con un <b>60% menos de plástico</b>, y muchas, muchas horas de prueba y error, la versión “final” del Keyboard Holder.</p>
+        <p class="text-primary mb-9 leading-8">Con un <b>60% menos de plástico</b>, y muchas, muchas horas de prueba y error, la versión final del Keyboard Holder.</p>
       </section>
 
     </article>
@@ -124,6 +128,7 @@
     <label class="block mb-6">
       <span class="text-sm md:text-base leading-7 block mb-1">Seleccioná el tamaño (Medidas VESA)</span>
       <select
+        (change)="onSelected($event)"
         class="
           block
           w-full
@@ -144,7 +149,7 @@
       </select>
     </label>
 
-    <button class="flex justify-center items-center bg-primary hover:bg-orange text-orange hover:text-primary text-sm md:text-lg w-full py-4 md:py-5 rounded-xl border-2 border-primary hover:border-orange transition duration-300 ease-in-out mb-4">
+    <button (click)="downloadFile()" class="flex justify-center items-center bg-primary hover:bg-orange text-orange hover:text-primary text-sm md:text-lg w-full py-4 md:py-5 rounded-xl border-2 border-primary hover:border-orange transition duration-300 ease-in-out mb-4">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="24" height="24" class="mr-2" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="currentColor"><path d="M12.5 6c-2.294 0-3.71 1.655-4.106 2.447A1 1 0 0 1 7.5 9c-.757 0-1.914.235-2.853.912C3.758 10.552 3 11.626 3 13.5c0 1.458.459 2.415 1.05 3.06c.607.663 1.418 1.062 2.204 1.269a1 1 0 0 1-.508 1.934c-1.049-.276-2.238-.833-3.171-1.852C1.624 16.873 1 15.423 1 13.5c0-2.526 1.075-4.201 2.478-5.212c1.124-.809 2.413-1.163 3.435-1.26C7.751 5.773 9.626 4 12.5 4c2.13 0 3.65 1.08 4.607 2.33a7.133 7.133 0 0 1 1.285 2.745c.785.127 1.695.43 2.505 1.014C22.092 10.948 23 12.373 23 14.5c0 1.516-.462 2.697-1.196 3.571c-.72.86-1.65 1.362-2.498 1.634a1 1 0 1 1-.612-1.904c.586-.188 1.157-.513 1.578-1.015c.408-.486.728-1.202.728-2.286c0-1.474-.592-2.299-1.272-2.789c-.73-.526-1.638-.711-2.228-.711a1 1 0 0 1-1-1c0-.502-.284-1.543-.982-2.455C14.85 6.67 13.87 6 12.5 6zm-.5 4a1 1 0 0 1 1 1v5.586l1.293-1.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L11 16.586V11a1 1 0 0 1 1-1z"/></g></svg>
       Tengo impresora 3D, ¡Descargar!
     </button>
@@ -155,5 +160,24 @@
       </svg>
       Volver
     </button>
+  </div>
+</div>
+
+<div class="Alert fixed top-0 left-0 right-0 bottom-0 z-40 text-primary flex items-end justify-center bg-black transition duration-300 ease-in-out" [class.active]="alertSuccess">
+  <div class="max-w-sm md:max-w-2xl bg-green p-6 rounded-t-2xl transition duration-300 ease-in-out" [class.active]="alertSuccess">
+    <div class="flex items-center mb-2 md:mb-3">
+      <h3 class="text-xl text-white md:text-2xl font-bold">
+        ¡Listo! 🎉
+      </h3>
+    </div>
+
+    <p class="text-sm text-white md:text-base text md:mb-4">
+      Espero que lo disfrutes y en unas horas ya lo estés usando 💪🏻
+    </p>
+
+    <button (click)="toggleAlert()" class="flex justify-center items-center bg-green hover:bg-white text-white hover:text-black text-sm md:text-lg w-full py-4 md:py-5 rounded-xl border-2 border-white hover:border-white transition duration-300 ease-in-out">
+      Cerrar
+    </button>
+
   </div>
 </div>

@@ -8,7 +8,7 @@
   }
 }
 
-.Modal {
+.Modal, .Alert {
   visibility: hidden;
   @apply bg-opacity-0;
 }
@@ -18,14 +18,18 @@
     visibility: visible;
     @apply bg-opacity-50;
   }
+  .Alert.active {
+    visibility: visible;
+    @apply bg-opacity-50;
+  }
 }
 
-.Modal > div {
+.Modal > div, .Alert > div{
   -webkit-transform: translate(0%, 420px);
   transform: translate(0%, 420px);
 }
 
-.Modal > div.active {
+.Modal > div.active, .Alert > div.active {
   -webkit-transform: translate(0%);
   transform: translate(0%);
 }
