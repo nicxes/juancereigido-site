@@ -18,6 +18,7 @@ import player from 'lottie-web';
 // Pages
 import { KeyboardComponent } from './pages/keyboard/keyboard.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HolovoxComponent } from './pages/holovox/holovox.component';
 
 // Components
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { NavbarMobileComponent } from './components/navbar-mobile/navbar-mobile.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { DownloadComponent } from './components/download/download.component';
+import { PickaboxComponent } from './pages/pickabox/pickabox.component';
 
 // Note we need a separate function as it's required
 // by the AOT compiler.
@@ -38,6 +40,8 @@ export function playerFactory() {
 const routes: Routes = [
   { path: '', redirectTo: '/keyboard', pathMatch: 'full' },
   { path: 'keyboard', component: KeyboardComponent },
+  { path: 'holovox', component: HolovoxComponent },
+  { path: 'pickabox', component: PickaboxComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
@@ -49,7 +53,8 @@ const routes: Routes = [
     LogoComponent,
     NavbarMobileComponent,
     LoadingComponent,
-    DownloadComponent
+    DownloadComponent,
+    PickaboxComponent
   ],
   imports: [
     BrowserModule,
