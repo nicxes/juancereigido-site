@@ -19,6 +19,9 @@ import player from 'lottie-web';
 import { KeyboardComponent } from './pages/keyboard/keyboard.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HolovoxComponent } from './pages/holovox/holovox.component';
+import { PickaboxComponent } from './pages/pickabox/pickabox.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { ResumeComponent } from './pages/resume/resume.component';
 
 // Components
 import { AppComponent } from './app.component';
@@ -28,7 +31,6 @@ import { LogoComponent } from './components/logo/logo.component';
 import { NavbarMobileComponent } from './components/navbar-mobile/navbar-mobile.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { DownloadComponent } from './components/download/download.component';
-import { PickaboxComponent } from './pages/pickabox/pickabox.component';
 
 // Note we need a separate function as it's required
 // by the AOT compiler.
@@ -42,6 +44,8 @@ const routes: Routes = [
   { path: 'keyboard', component: KeyboardComponent },
   { path: 'holovox', component: HolovoxComponent },
   { path: 'pickabox', component: PickaboxComponent },
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'resume', component: ResumeComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
@@ -54,7 +58,9 @@ const routes: Routes = [
     NavbarMobileComponent,
     LoadingComponent,
     DownloadComponent,
-    PickaboxComponent
+    PickaboxComponent,
+    PortfolioComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
